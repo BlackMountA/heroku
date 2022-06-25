@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #634988;
+    height: 1000px;
+}
+.title{
+    width: 10px;
+    height: 10px;
+}
+nav{
+    width: 100%;
+    height: 32px;
+    background-color: #eaf5fe;
+    display: flex;
+    padding-left: 20px;
+    text-align: center;
+    align-items: center;
+    font-family:benton-sans,
+    'Helvetica Neue',
+    helvetica,
+    arial,
+    sans-serif;
+    color: #3f3f44;
+}
+.logo{
+    width: 25px;
+    height: 15px;
+    padding-right: 10px;
+   
+}
+.logos{
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 30px;
+    color: #3f3f44;
+    font-family: benton-sans,
+    'Helvetica Neue',
+    helvetica,
+    arial,
+    sans-serif;
+    line-height: 20px;
+    font-size: 12px;
+}
+.logos p a{
+    text-decoration: none;
+    color: #3f3f44;
+}
+.slash{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.loginbox{
+    background-color: #fff;
+    width: 430px;
+    height: 443px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -17%);
+    border-radius: 10px;
+}
+.sales1{
+    width: 230px;
+    height: 130px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -185%);
+    margin-bottom: 100px;
+    
+}
+.first{
+font-family: benton-sans,
+"Helvetica Neue",
+helvetica,
+arial,
+sans-serif;
+font-weight: 100;
+color: #664986;
+font-size: 24px;
+line-height: 36px;
+margin-top: 40px;
+margin-bottom: 44px;
+text-align: center;
+margin-left: -5px;
+
+}
+.second{
+    padding-left: 40px;
+    font-family: benton-sans,
+    "Helvetica Neue",
+    helvetica,
+    arial,
+    sans-serif;
+    font-size: 12px;
+    Line-Height: 17px;
+    font-weight: 700;
+    
+}
+.second1{
+    padding-bottom: 4px;
+    color: #62748e;
+}
+.second input{
+    width: 348px;
+    height: 44px;
+    border: 1px solid #cbcbd2;
+    border-radius: 5px;
+}
+.third{
+    font-weight: 700;
+    color: #62748e;
+    font-size: 12px;
+    line-height: 17px;
+    font-family: benton-sans,
+    "Helvetica Neue",
+    helvetica,
+    arial,
+    sans-serif;
+    padding-left: 40px;
+    padding-top: 21px;
+    padding-bottom: 20px;
+}
+.third1{
+    padding-bottom: 4px;
+    color: #62748e;
+}
+.third input{
+    width: 348px;
+    height: 44px;
+    border: 1px solid #cbcbd2 ;
+    border-radius: 5px;
+}
+input::placeholder{
+padding-left: px;
+}
+input:target{
+    padding-left:
+    outline: none;
+}
+input:focus{
+    
+    
+    
+}
+.login{
+    background-color: #634988;
+    color: white;
+    border-radius: 5px;
+    height: 45px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: benton-sans,
+    "Helvetica Neue",
+    helvetica,
+    arial,
+    sans-serif;
+    margin-left: 40px;
+    width: 348px;
+    border: 1px solid #634988;
+    border-radius: 5px;
+}
+
+.last{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , 77%);
+    padding-top: 100px;
+    width: 100%;
+    height: 100px;
+    text-align: center ;
+    font-family: benton-sans,
+    "Helvetica Neue",
+    helvetica,
+    arial,
+    sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #4a5568;
+    
+}
+.last a{
+    font-size: 17px;
+    font-family: benton-sans,
+    "Helvetica Neue",
+    helvetica,
+    arial,
+    sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    color:#79589f;
+}
+
+
+.test{
+  color: white;
+  padding-top: 649px;
+  padding-left: 541px;
+  font-size: 14px;
+  
+}
+.sso{
+    padding-right: 10px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: benton-sans,
+    'Helvetica Neue',
+    helvetica,
+    arial,
+    sans-serif;
+    ;
+    
+}
+.forgot{
+    padding-left: 10px;
+    
+    line-height: 20px;
+    font-weight: 400;
+    font-family: benton-sans,
+    'Helvetica Neue',
+    helvetica,
+    arial,
+    sans-serif;
+}
+.sso a{
+    color: white;
+}
+.forgot a{
+    color: white;
+}
+
+.sales2{
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    transform: translateY(23px);
+    margin-left: -15px;
+    margin-right: -15px;
+
+}
+
+.company{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 600;
+    padding-left: 570px;
+    font-family: benton-sans,
+    "Helvetica Neue",
+    helvetica,
+    arial,
+    sans-serif;
+    color: #fff;
+    letter-spacing: .5px;
+    word-spacing: 1px;
+    margin-top: 96px;
+    margin-bottom: 41px;
+    text-decoration: none;
+    width: 100%;
+    cursor: pointer;
+}
+.company a{
+    text-decoration: none;
+    color: white;
+}
+.term{
+    font-family: benton-sans,
+    "Helvetica Neue",
+    helvetica,
+    arial,
+    sans-serif;
+    font-weight: 600;
+    line-height: 17px;
+    font-size: 12px;
+    Color: rgba(255, 255, 255, 0.8);
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 5px;
+}
+.term a{
+    text-decoration: none;
+    color: white;
+}
+
+.copy{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #dcdae9;
+    font-family:benton-sans,
+    "Helvetica Neue",
+    helvetica,
+    arial,
+    sans-serif;
+    text-align: center;
+    margin-top: -8px;
+    
+}
+
+.terms{
+    padding-right: 5px;
+}
+.privacy{
+    padding-right: 5px;
+}
+.cookies{
+    padding-right: 5px;
+}

@@ -1,3 +1,11 @@
+:root{
+    --main-font-family:benton-sans,
+        'Helvetica Neue',
+        helvetica,
+        arial,
+        sans-serif;
+    --main-color:#634988;
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +13,7 @@
 }
 body{
     background-color: #634988;
-    height: 1000px;
+    
 }
 .title{
     width: 10px;
@@ -19,11 +27,7 @@ nav{
     padding-left: 20px;
     text-align: center;
     align-items: center;
-    font-family:benton-sans,
-    'Helvetica Neue',
-    helvetica,
-    arial,
-    sans-serif;
+    font-family: var(--main-font-family);
     color: #3f3f44;
 }
 .logo{
@@ -37,11 +41,7 @@ nav{
     font-weight: 400;
     font-size: 30px;
     color: #3f3f44;
-    font-family: benton-sans,
-    'Helvetica Neue',
-    helvetica,
-    arial,
-    sans-serif;
+    font-family: var(--main-font-family);
     line-height: 20px;
     font-size: 12px;
 }
@@ -53,28 +53,37 @@ nav{
     padding-left: 5px;
     padding-right: 5px;
 }
-
-.loginbox{
-    background-color: #fff;
-    width: 430px;
-    height: 443px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -17%);
-    border-radius: 10px;
+.brand-main-logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    animation: rotate 1500ms 5;
 }
-.sales1{
+
+.brand-main-logo {
     width: 230px;
-    height: 130px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -185%);
-    margin-bottom: 100px;
+    height: 130px
     
 }
-.first{
+
+.loginbox{
+    background-color: white;
+    width: 400px;
+    /* height: 443px; */
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 40px;
+    animation: bounce 1500ms;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    /* grid-row-gap: 0.3rem; */
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.login-title{
 font-family: benton-sans,
 "Helvetica Neue",
 helvetica,
@@ -84,13 +93,75 @@ font-weight: 100;
 color: #664986;
 font-size: 24px;
 line-height: 36px;
-margin-top: 40px;
-margin-bottom: 44px;
+padding-top: 2rem;
+padding-bottom: 2rem;
 text-align: center;
-margin-left: -5px;
+/* margin-left: -5px; */
 
 }
-.second{
+.labels{
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    font-family: var(--main-font-family);
+    color: #62748e;
+    font-size: 12px;
+    Line-Height: 17px;
+}
+.inputs{
+    height: 44px;
+    border: 1px solid #cbcbd2;
+    border-radius: 5px;
+    
+}
+.inputs:hover{
+    
+    color: var(--main-color);
+}
+input:focus {
+    outline: none;
+    padding-left: 20px;
+}
+input::placeholder{
+    /* padding-left: 20px; */
+}
+.login {
+    background-color: #634988;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: benton-sans,
+        "Helvetica Neue",
+        helvetica,
+        arial,
+        sans-serif;
+    border: 1px solid #634988;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+}
+.signup{
+    text-align: center;
+    font-size: 17px;
+    font-family: var(--main-font-family);
+    line-height: 24px;
+    color: #4a5568;
+    background-color: #ccc;
+    padding: 12px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.signup a{
+    text-decoration: none;
+    font-size: 17px;
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    line-height: 24px;
+    color: #79589f;
+    margin-left: 5px;
+}
+/* .second{
     padding-left: 40px;
     font-family: benton-sans,
     "Helvetica Neue",
@@ -147,33 +218,9 @@ input:focus{
     
     
     
-}
-.login{
-    background-color: #634988;
-    color: white;
-    border-radius: 5px;
-    height: 45px;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    font-family: benton-sans,
-    "Helvetica Neue",
-    helvetica,
-    arial,
-    sans-serif;
-    margin-left: 40px;
-    width: 348px;
-    border: 1px solid #634988;
-    border-radius: 5px;
-}
+} */
 
-.last{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , 77%);
-    padding-top: 100px;
+/* .last{
     width: 100%;
     height: 100px;
     text-align: center ;
@@ -187,8 +234,8 @@ input:focus{
     line-height: 24px;
     color: #4a5568;
     
-}
-.last a{
+} */
+/* .last a{
     font-size: 17px;
     font-family: benton-sans,
     "Helvetica Neue",
@@ -198,18 +245,20 @@ input:focus{
     font-weight: 400;
     line-height: 24px;
     color:#79589f;
-}
+} */
 
 
-.test{
-  color: white;
-  padding-top: 649px;
-  padding-left: 541px;
-  font-size: 14px;
-  
+.alternative-login{
+    display: flex;
+    justify-content: center;
+    color: white;
+  /* padding-top: 700px; */
+  /* padding-left: 541px; */
+    font-size: 14px;
+    margin-top: 15px;
 }
-.sso{
-    padding-right: 10px;
+.login-alternate{
+    /* padding-right: 10px; */
     line-height: 20px;
     font-weight: 400;
     font-family: benton-sans,
@@ -217,81 +266,82 @@ input:focus{
     helvetica,
     arial,
     sans-serif;
-    ;
     
 }
-.forgot{
-    padding-left: 10px;
-    
-    line-height: 20px;
-    font-weight: 400;
-    font-family: benton-sans,
-    'Helvetica Neue',
-    helvetica,
-    arial,
-    sans-serif;
-}
-.sso a{
+.login-alternate__link{
     color: white;
-}
-.forgot a{
-    color: white;
+    margin: 0 1rem 0 1rem;
+
 }
 
-.sales2{
+
+
+.brand-description{
+    display: flex;
+   /* justify-content: center; */
+    margin-top: 96px;
+    margin-bottom: 41px;
+    animation: slide2 1500ms;
+}
+.brand-logo {
     width: 100px;
     height: 50px;
-    align-items: center;
-    transform: translateY(23px);
+    vertical-align: middle;
+    /* align-items: center; */
+    /* transform: translateY(23px); */
     margin-left: -15px;
     margin-right: -15px;
 
 }
-
-.company{
-    display: inline-block;
+.brand-description__link{
+    text-decoration: none;
+    cursor: pointer;
     text-transform: uppercase;
     font-size: 10px;
     line-height: 14px;
     font-weight: 600;
-    padding-left: 570px;
+    margin: 0 auto;
     font-family: benton-sans,
-    "Helvetica Neue",
-    helvetica,
-    arial,
-    sans-serif;
-    color: #fff;
+            "Helvetica Neue",
+            helvetica,
+            arial,
+            sans-serif;
     letter-spacing: .5px;
     word-spacing: 1px;
-    margin-top: 96px;
-    margin-bottom: 41px;
-    text-decoration: none;
-    width: 100%;
-    cursor: pointer;
+    color: #fff;
 }
-.company a{
-    text-decoration: none;
-    color: white;
+.main-footer{
+    animation: slide1 1500ms  ;
+    margin-bottom: 20px;
 }
-.term{
+.nav-links{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-link {
+    padding-right: 10px;
+}
+.nav-links .nav-link a{
+    text-decoration: none;
     font-family: benton-sans,
-    "Helvetica Neue",
-    helvetica,
-    arial,
-    sans-serif;
+            "Helvetica Neue",
+            helvetica,
+            arial,
+            sans-serif;
     font-weight: 600;
     line-height: 17px;
     font-size: 12px;
     Color: rgba(255, 255, 255, 0.8);
-    text-transform: capitalize;
-    text-align: center;
-    padding-top: 5px;
-}
-.term a{
-    text-decoration: none;
-    color: white;
-}
 
+}
+@media(max-width:500px){
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .copy{
     font-size: 12px;
     font-weight: 700;
@@ -306,13 +356,50 @@ input:focus{
     margin-top: -8px;
     
 }
+@keyframes slide1{
+    0%{
+        transform: translateX(-830px) rotateZ(0);
+    }
+    100%{
+        transform: translateX(0) ;
+    }
+}
 
-.terms{
-    padding-right: 5px;
+@keyframes slide2 {
+    0% {
+        transform: translateX(600px) rotateZ(0);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
-.privacy{
-    padding-right: 5px;
+@keyframes bounce {
+    0% {
+        transform: translateY(-600px) translateX(300px) ;
+    }
+    33.3%{
+        transform: translateY(-40px);
+    }
+    66.6%{
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
-.cookies{
-    padding-right: 5px;
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    50% {
+        transform: rotateZ(180deg);
+    }
+
+    
+
+    100% {
+    transform: rotateZ(360deg) ;
+    }
 }

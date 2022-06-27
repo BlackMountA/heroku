@@ -161,6 +161,15 @@ input::placeholder{
     color: #79589f;
     margin-left: 5px;
 }
+@media (max-width:480px){
+    .loginbox{
+        width: 90%;
+    }
+    .login-form{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
 /* .second{
     padding-left: 40px;
     font-family: benton-sans,
@@ -257,7 +266,7 @@ input:focus{
     font-size: 14px;
     margin-top: 15px;
 }
-.login-alternate{
+.login-options{
     /* padding-right: 10px; */
     line-height: 20px;
     font-weight: 400;
@@ -268,12 +277,28 @@ input:focus{
     sans-serif;
     
 }
-.login-alternate__link{
+.login-option__link{
     color: white;
     margin: 0 1rem 0 1rem;
 
 }
+@media (max-width:400px) {
+    .alternative-login {
+        display: block;
+    }
+    
+    .login-option__link{
+        display: block;
+        
 
+    }
+    #login-option{
+        float: right;
+    }
+}
+#clear{
+    clear: both;
+}
 
 
 .brand-description{
